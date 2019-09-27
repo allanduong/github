@@ -1,3 +1,15 @@
+a:link, a:visited {
+  background-color: #40bde3;
+  color: Black;
+  padding: 0px 0px 1px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #36f48f;
+}
 body {
   background-image: url("https://i.pinimg.com/originals/e5/49/c7/e549c71118d476da01f06ddc1788a4ff.png");
 }
