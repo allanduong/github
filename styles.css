@@ -6,6 +6,11 @@ a:link, a:visited {
   text-decoration: none;
   display: inline-block;
 }
+#borderimg {
+  border: 25px solid transparent;
+  padding: 5px;
+  border-image: url("https://www.tripwiremagazine.com/wp-content/uploads/2012/06/stribes-pattern-stock_thumb.jpg") 15% round;
+}
 
 a:hover, a:active {
   background-color: #36f48f;
