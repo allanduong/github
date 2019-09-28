@@ -4,6 +4,7 @@ body {
   background-image: url("http://www.906graphics.com/wp-content/uploads/2012/06/carbon-fiber-overview.jpg");
 }
 
+/* Code below makes a class that sets only h1 to center */
 h1.movement{
   text-align: center;
 }
