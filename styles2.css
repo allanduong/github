@@ -1,10 +1,175 @@
 body {
-
-  /* Code below sets the background image */
-  background-image: url("http://www.906graphics.com/wp-content/uploads/2012/06/carbon-fiber-overview.jpg");
+    margin: 0;
+    padding: 0;
+    /* Code below sets the background image */
+    background-image: url("http://www.906graphics.com/wp-content/uploads/2012/06/carbon-fiber-overview.jpg");
 }
 
+
 /* Code below makes a class that sets only h1 to center */
-h1.movement{
-  text-align: center;
+
+h1.movement {
+    text-align: center;
+}
+
+.introTitle {
+    text-align: center;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Style the top navigation bar */
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(112, 105, 255);
+}
+
+
+/* Style the topnav links */
+
+.topnav a {
+    float: left;
+    display: block;
+    font-family: Tw Cen MT;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 35px;
+    text-decoration: none;
+}
+
+
+/* Change color on hover */
+
+.topnav a:hover {
+    background-color: rgb(255, 242, 124);
+    color: black;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    /* ADDED */
+    box-shadow: 0 4px 8px 7px rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.item {
+    flex: 1 1 0%;
+    /* ADDED */
+    min-width: 0;
+    /* ADDED */
+    /*padding: 0.25em;*/
+    text-align: center;
+    display: inline-block;
+    width: 33%;
+    height: 400px;
+    background: whitesmoke;
+    vertical-align: middle;
+    -webkit-transition: flex-basis 0.3s ease-out;
+    /* MODIFIED */
+    transition: flex-basis 0.3s ease-out;
+    /* MODIFIED */
+}
+
+.item:hover {
+    cursor: pointer;
+    /*position: absolute;*/
+    /*left: 0;*/
+    flex-basis: 100%;
+    /* ADDED */
+    -webkit-transition: flex-basis 0.3s ease-out;
+    /* MODIFIED */
+    transition: flex-basis 0.3s ease-out;
+    /* MODIFIED */
+    background-color: rgb(117, 115, 115, 0.8);
+}
+
+.item:hover .pic1 {
+    margin-top: -15px;
+    height: 350px;
+    transform: scale(1.2);
+    -webkit-transition: 0.3s ease-out;
+    /* MODIFIED */
+    transition: 0.3s ease-out;
+    /* MODIFIED */
+}
+
+.pic1 {
+    height: 330px;
+    box-shadow: 0 4px 8px 7px rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition: 0.3s ease-out;
+    /* MODIFIED */
+    transition: 0.3s ease-out;
+    /* MODIFIED */
+    z-index: 6;
+}
+
+.test1 {
+    background: #c3c3c3;
+    z-index: 0;
+}
+
+.maindiv1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.test1leftdiv {
+    position: relative;
+    overflow: hidden;
+    width: 600px;
+    height: 300px;
+    left: -190px;
+}
+
+.test1rightdiv {
+    position: relative;
+    overflow: hidden;
+    width: 600px;
+    height: 300px;
+    right: -190px;
+}
+
+.test2 {
+    background: #fafafa;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.test3 {
+    background: rgb(117, 115, 115);
+    color: white;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.pClassLeft {
+    margin-top: 10px;
+    background: rgb(209, 209, 209);
+    box-shadow: 0 4px 8px 7px rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px 20px;
+    text-align: left;
+    line-height: 1.5;
+    margin-left: 180px;
+    margin-right: 50px;
+    height: 270px;
+    color: black;
+}
+
+.pClassRight {
+    margin-top: 10px;
+    background: rgb(209, 209, 209);
+    box-shadow: 0 4px 8px 7px rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px 20px;
+    text-align: left;
+    line-height: 1.5;
+    margin-left: 50px;
+    margin-right: 180px;
+    height: 270px;
+    color: black;
 }
