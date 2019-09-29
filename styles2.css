@@ -70,7 +70,7 @@ h1.movement {
   height: 400px;
   background: whitesmoke;
   vertical-align: middle;
-  -webkit-transition: flex-basis 0.3s ease-out;
+  -webkit-transition: flex-basis 5s ease-out;
   /* MODIFIED */
   transition: flex-basis 0.3s ease-out;
   /* MODIFIED */
@@ -91,8 +91,8 @@ h1.movement {
 
 .item:hover .pic1 {
   margin-top: -15px;
-  height: 350px;
-  transform: scale(1.2);
+  height: 250px;
+  transform: scale(1.8);
   -webkit-transition: 0.3s ease-out;
   /* MODIFIED */
   transition: 0.3s ease-out;
@@ -110,7 +110,7 @@ h1.movement {
 }
 
 .test1 {
-  background: #c3c3c3;
+  background: rgb(195, 195, 195);
   z-index: 0;
 }
 
@@ -142,8 +142,8 @@ h1.movement {
 }
 
 .test3 {
-  background: rgb(117, 115, 115);
-  color: white;
+  background: rgb(195, 195, 195);
+  color: black;
   z-index: 3;
   overflow: hidden;
 }
