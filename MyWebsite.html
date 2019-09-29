@@ -1,51 +1,56 @@
 <!-- Declares the Document type -->
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- Code Below refers to the styles2.css file-->
-    <link rel="stylesheet" type="text/css" href="styles2.css" />
 
-    <!-- Code Below names the website -->
-    <title>Allan Duong's Competitive Website</title>
+<head>
+  <!-- Code Below refers to the styles2.css file-->
+  <link rel="stylesheet" type="text/css" href="styles2.css" />
 
-    <!-- Code below scales the site to the device screen -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
+  <!-- Code Below names the website -->
+  <title>Allan Duong's Competitive Website</title>
 
-  <body>
-    <!-- Code below pastes a picture of the website Logo -->
-    <h1 class="movement">
-      <img src="https://bit.ly/2nzgrJ5" width="700" height="450" />
-    </h1>
+  <!-- Code below scales the site to the device screen -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
 
-    <!-- Code Below writes a level 1 header "Allan Duong" then centers and colors it white -->
-    <h1 class="movement">
-      <font size="100px" face="Tw Cen MT" color="white">Welcome!</font>
-    </h1>
+<body>
+  <div>
+  <!-- Code below pastes a picture of the website Logo -->
+  <h1 class="movement">
+    <img  src="logo.png" width="700" height="450" />
+  </h1>
+  </div>
 
-    <div class="topnav">
-      <a href="#div1">Home</a>
-      <a href="#div2">Social Media</a>
-      <a href="#div3">About Me</a>
-    </div>
+  <!-- Code Below writes a level 1 header "Allan Duong" then centers and colors it white -->
+  <h1 class="movement">
+    <font size="100px" face="Tw Cen MT" color="white">Welcome!</font>
+  </h1>
 
-    <div class="introTitle">
+  <div id="navbar">
+    <a class="active" href="#topDiv">Home</a>
+    <a href="#div1">About me</a>
+    <a href="#div2">Social media</a>
+  </div>
+  <div class="content">
+    <div class="introTitle" id="topDiv">
       <h1>
         <font style="font-size: 60px" face="Tw Cen MT" color="#7069ff">
-          Hello, My name is <font color="#fff27c">Allan!</font></font
-        >
+          Hello, My name is <font color="#fff27c">Allan!</font>
+        </font>
         <br />
-        <font style="font-size: 40px" face="Tw Cen MT" color="#7069ff"
-          >(The most extroverted, introvert you'll ever meet.)</font
-        >
+        <font style="font-size: 40px" face="Tw Cen MT" color="#7069ff">(The most extroverted, introvert you'll ever
+          meet.)
+        </font>
       </h1>
     </div>
 
     <div class="row expanded">
       <div class="container">
         <div class="item test1">
-          <p><font size="10px" face="Tw Cen MT">Art</font></p>
+          <p>
+            <font size="10px" face="Tw Cen MT">Art</font>
+          </p>
           <div class="maindiv1">
             <div class="test1leftdiv">
               <div class="pClassLeft">
@@ -57,7 +62,7 @@
                 </p>
               </div>
             </div>
-            <img class="pic1" src="https://bit.ly/2ohLUQv" />
+            <img class="pic1" src="art.jpg" />
             <div class="test1rightdiv">
               <div class="pClassRight">
                 <h3>HI</h3>
@@ -71,7 +76,9 @@
           </div>
         </div>
         <div class="item test2">
-          <p><font size="10px" face="Tw Cen MT">Code</font></p>
+          <p>
+            <font size="10px" face="Tw Cen MT">Code</font>
+          </p>
           <div class="maindiv1">
             <div class="test1leftdiv">
               <div class="pClassLeft">
@@ -83,7 +90,7 @@
                 </p>
               </div>
             </div>
-            <img class="pic1" src="https://bit.ly/2obziKt" />
+            <img class="pic1" src="code.jpg" />
             <div class="test1rightdiv">
               <div class="pClassRight">
                 <h3>HI</h3>
@@ -97,7 +104,9 @@
           </div>
         </div>
         <div class="item test3">
-          <p><font size="10px" face="Tw Cen MT">Music</font></p>
+          <p>
+            <font size="10px" face="Tw Cen MT">Music</font>
+          </p>
           <div class="maindiv1">
             <div class="test1leftdiv">
               <div class="pClassLeft">
@@ -109,7 +118,7 @@
                 </p>
               </div>
             </div>
-            <img class="pic1" src="https://bit.ly/2m3IZKs" />
+            <img class="pic1" src="Music.jpg" />
             <div class="test1rightdiv">
               <div class="pClassRight">
                 <h3>HI</h3>
@@ -125,17 +134,26 @@
       </div>
     </div>
 
-    <div
-      id="div1"
-      style="background-color: rgb(141, 132, 12); height: 100vh; width: 100%; margin: 50px 0;"
-    ></div>
-    <div
-      id="div2"
-      style="background-color: rgb(28, 172, 172); height: 100vh; width: 100%; margin: 50px 0;"
-    ></div>
-    <div
-      id="div3"
-      style="background-color: rgb(12, 10, 121); height: 100vh; width: 100%; margin: 50px 0;"
-    ></div>
-  </body>
+    <div id="div1" style="background-color: rgb(141, 132, 12); height: 100vh; width: 100%; margin: 50px 0;"></div>
+    <div id="div2" style="background-color: rgb(28, 172, 172); height: 100vh; width: 100%; margin: 50px 0;"></div>
+    <div id="div3" style="background-color: rgb(12, 10, 121); height: 100vh; width: 100%; margin: 50px 0;"></div>
+  </div>
+
+  <!-- Below is java script code-->
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+</body>
+
 </html>
