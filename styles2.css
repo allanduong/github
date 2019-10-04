@@ -11,7 +11,7 @@ html {
 
 /* Code below makes a class that sets only h1 to center */
 
-h1.movement {
+.movement {
   text-align: center;
 }
 
@@ -190,3 +190,11 @@ h1.movement {
 .sticky + .content {
   padding-top: 60px;
 }
+.box {
+  width: 315px;
+  padding: auto;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+}
+
