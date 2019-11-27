@@ -1,2 +1,2 @@
 # github
-This is an experiment to making a person website.
+This is an experiment to making a personal website.
